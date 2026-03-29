@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Result Modal -->
+<div class="modal" id="resultModal">
+    <div class="modal-content">
+        <h2 id="resultTitle">Test Result</h2>
+
+        <div class="result-stats">
+            <p>WPM: <span id="finalWpm">0</span></p>
+            <p>CPM: <span id="finalCpm">0</span></p>
+            <p>Mistakes: <span id="finalMistakes">0</span></p>
+            <p>Accuracy: <span id="finalAccuracy">0</span>%</p>
+            <p>Time Taken: <span id="finalTime">0</span>s</p>
+        </div>
+
+        <button onclick="closeModal()">Restart Test</button>
+    </div>
+</div>
+
+<body>
+
+<div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <div class="content">
+        <p id="paragraph"></p>
+
+        <input type="text" id="inputField" placeholder="Start typing here..." autofocus>
+
+        <div class="stats">
+            <div>Time: <span id="time">60</span>s</div>
+            <div>Mistakes: <span id="mistakes">0</span></div>
+            <div>WPM: <span id="wpm">0</span></div>
+            <div>CPM: <span id="cpm">0</span></div>
+            <div>Accuracy: <span id="accuracy">100</span>%</div>
+        </div>
+
+        <button onclick="resetTest()">Restart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
