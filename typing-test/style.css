@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background: #020617;
+    padding: 30px;
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #38bdf8;
+}
+
+#paragraph {
+    background: #020617;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.correct {
+    color: #22c55e;
+}
+
+.incorrect {
+    color: #ef4444;
+    text-decoration: underline;
+}
+
+#inputField {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.stats div {
+    background: #020617;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+/* ===== MODAL ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #020617;
+    padding: 25px 35px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
+    animation: popup 0.3s ease;
+}
+
+.modal-content h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.result-stats p {
+    background: #020617;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #334155;
+}
+
+.modal-content button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #22c55e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #16a34a;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
